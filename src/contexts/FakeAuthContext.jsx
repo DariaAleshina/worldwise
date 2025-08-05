@@ -42,7 +42,7 @@ function FakeAuthProvider({ children }) {
 
   return (
     <FakeAuthContext.Provider
-      value={(user, isUserAuthenticated, login, logout)}
+      value={{ user, isUserAuthenticated, login, logout }}
     >
       {children}
     </FakeAuthContext.Provider>
